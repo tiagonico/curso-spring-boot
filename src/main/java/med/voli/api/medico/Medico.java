@@ -55,7 +55,7 @@ public class Medico {
         }
     }
 
-    public void excluir(){
+    public void inativar(){
         this.ativo = false;
     }
 }

@@ -52,13 +52,13 @@ public class MedicoController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public void excluir(@PathVariable Long id){
+    public void remover(@PathVariable Long id){
         // Exclusão permanente
         //medicoRepository.deleteById(id); 
 
         //Exclusão Lógica (Setar Ativo como false)
         var medico = medicoRepository.getReferenceById(id);
-        medico.excluir();
+        medico.inativar();
     }
 
 }
