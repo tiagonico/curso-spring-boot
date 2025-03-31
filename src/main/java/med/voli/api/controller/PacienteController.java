@@ -5,28 +5,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.voli.api.paciente.PacienteRepository;
-import med.voli.api.paciente.DadosDetalhamentoPaciente;
-import med.voli.api.medico.DadosAtualizacaoMedico;
-import med.voli.api.medico.DadosCadastroMedico;
-import med.voli.api.medico.DadosDetalhamentoMedico;
-import med.voli.api.medico.DadosListagemMedico;
-import med.voli.api.medico.Medico;
-import med.voli.api.paciente.DadosAtualizacaoPaciente;
-import med.voli.api.paciente.DadosCadastroPaciente;
-import med.voli.api.paciente.DadosListagemPaciente;
-import med.voli.api.paciente.Paciente;
+import med.voli.api.domain.paciente.*;
 
 import org.springframework.web.bind.annotation.RequestBody;
 

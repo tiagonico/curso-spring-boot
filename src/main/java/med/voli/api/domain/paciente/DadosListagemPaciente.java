@@ -1,4 +1,4 @@
-package med.voli.api.paciente;
+package med.voli.api.domain.paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String email, String cpf) {
 

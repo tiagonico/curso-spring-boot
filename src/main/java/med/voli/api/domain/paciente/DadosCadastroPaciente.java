@@ -1,8 +1,8 @@
-package med.voli.api.paciente;
+package med.voli.api.domain.paciente;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import med.voli.api.endereco.DadosEndereco;
+import med.voli.api.domain.endereco.DadosEndereco;
 
 public record DadosCadastroPaciente(
     @NotBlank
